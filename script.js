@@ -6,128 +6,128 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Qual você acha mais difícil lidar?",
+        enunciado: "Qual é o nome completo do protagonista da série Harry Potter?",
         alternativas: [
             {
-                texto: "Solidão",
-                afirmacao: "Lufa lufa"
+                texto: "Harry James Potter",
+                afirmacao: "Acertou"
             },
             {
-                texto: "Tédio",
-                afirmacao: "Grifinória"
+                texto: "Harry Sirius Potter",
+                afirmacao: "Errou"
             },
             {
-                texto: "Ser ignorado",
-                afirmacao: "Sonserina"
+                texto: "Harry Potter James",
+                afirmacao: "Errou"
             },
             {
-                texto: "Fome",
-                afirmacao: "Corvinal"
+                texto: "Harry Dusley Potter",
+                afirmacao: "Errou"
             }            
         ]
     },
     {
-        enunciado: "O que você mais deseja aprender em hogwarts?",
+        enunciado: "Qual é o nome da escola de magia frequentada por Harry Potter?",
         alternativas: [
             {
-                texto: "Voar em uma vassoura",
-                afirmacao: "Grifinória"
+                texto: "Durmstrang",
+                afirmacao: "Errou"
             },
             {
-                texto: "Tudo sobre criaturas mágicas",
-                afirmacao: "Lufa lufa"
+                texto: "Beauxbatons",
+                afirmacao: "Errou"
             },
             {
-                texto: "Segredos do castelo",
-                afirmacao: "Corvinal"
+                texto: "Hogwarts",
+                afirmacao: "Acertou"
             },
             {
-                texto: "Feitiços",
-                afirmacao: "Sonserina"
+                texto: "LLvermorny",
+                afirmacao: "Errou"
             }            
         ]
     },
     {
-        enunciado: "Em um jardim encantado, o que você iria examinar primeiro?",
+        enunciado: "Qual é o nome do professor que ensina Poções no primeiro ano de Harry em Hogwarts?",
         alternativas: [
             {
-                texto: "Árvore de folhas prateadas",
-                afirmacao: "Sonserina"
+                texto: "Remus Lupin",
+                afirmacao: "Errou"
             },
             {
-                texto: "Piscina borbulhantes",
-                afirmacao: "Grifinória"
+                texto: "Severus Snape",
+                afirmacao: "Acertou"
             },
             {
-                texto: "Estátua de um velho bruxo",
-                afirmacao: "Corvinal"
+                texto: "Gilderoy Lockhart",
+                afirmacao: "Errou"
             },
             {
-                texto: "Cogumelos vermelhos que conversam entre si",
-                afirmacao: "Lufa lufa"
+                texto: "Minerva McGonagall",
+                afirmacao: "Errou"
             }
         ]
     },
     {
-        enunciado: "O que você odeia que te chamem?",
+        enunciado: "Qual é o nome do feitiço usado para desmascarar um oponente?",
         alternativas: [
             {
-                texto: "Covarde",
-                afirmacao: "Grifinória"
+                texto: "Expelliarmus",
+                afirmacao: "Acertou"
             },
             {
-                texto: "Egoísta",
-                afirmacao: "Lufa lufa"
+                texto: "Stupefy",
+                afirmacao: "Errou"
             },
             {
-                texto: "Ordinário",
-                afirmacao: "Sonserina"
+                texto: "Avada Kedavra",
+                afirmacao: "Errou"
             },
             {
-                texto: "Ignorante",
-                afirmacao: "Corvinal"
+                texto: "Lumos",
+                afirmacao: "Errou"
             }
         ]
     },
     {
-        enunciado: "Qual estrada mais te atenta?",
+        enunciado: "Qual é o nome do animal de estimação de Harry Potter",
         alternativas: [
             {
-                texto: "Rua de paralelepípedo com estátuas antigas",
-                afirmacao: "Corvinal"
+                texto: "Bichento",
+                afirmacao: "Errou"
             },
             {
-                texto: "Caminho sinuoso e coberto pela floresta",
-                afirmacao: "Lufa lufa"
+                texto: "Trevor",
+                afirmacao: "Errou"
             },
             {
-                texto: "Beco estreito, escuro com o fim iluminado",
-                afirmacao: "Sonserina"
+                texto: "Scabberrs",
+                afirmacao: "Errou"
             },
             {
-                texto: "Rua larga, ensolarada e com grama",
-                afirmacao: "Grifinória"
+                texto: "Edwiges",
+                afirmacao: "Acertou"
             }
         ]
     },
     {
-        enunciado: "Você está em uma feira mágica e se depara com quatro poções brilhantes em uma mesa. Cada poção tem uma cor diferente: uma é vermelha como rubis, outra é verde como esmeraldas, a terceira é azul como safiras e a última é roxa como ametistas. Qual poção você escolhe experimentar primeiro e por quê?",
+        enunciado: "Qual é o nome do diretor de Hogwarts durante a maior parte dos filmes?",
         alternativas: [
             {
-                texto: "Decido experimentar a poção azul como safiras, pois sou fascinado pela calma e serenidade que a cor azul transmite",
-                afirmacao: "Corvinal"
+                texto: "Albus Dumbledore",
+                afirmacao: "Acertou"
             },
             {
-                texto: "Opto pela poção verde como esmeraldas, pois me sinto conectado à natureza e à renovação que a cor verde simboliza",
-                afirmacao: "Lufa lufa"
+                texto: "Severus Snape",
+                afirmacao: "Errou"
             },
             {
-                texto: "Escolho a poção roxa como ametista, pois gosto da mística e da sabedoria associadas à cor roxa",
-                afirmacao: "Sonserina"
+                texto: "Minerva McGonagall",
+                afirmacao: "Errou"
             },
             {
-                texto: "Escolho a poção vermelha como rubis, pois me sinto atraído pela bravura e paixão associadas à cor vermelha",
-                afirmacao: "Grifinória"
+                texto: "Gellert Grindelwald",
+                afirmacao: "Errou"
             }
         ]
     },    
@@ -170,15 +170,17 @@ function respostaSelecionada(opcaoSelecionada) {
         contagemAfirmacoes[afirmacaoSelecionada] = 1;
     }
     
-    historiaFinal += afirmacaoSelecionada + " ";
     atual++;
     mostraPergunta();
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Sua casa é...";
-    const afimMaisEscolhida = Object.keys(contagemAfirmacoes).reduce((a, b) => contagemAfirmacoes[a] > contagemAfirmacoes[b] ? a : b);
-    textoResultado.textContent = afimMaisEscolhida;
+    const totalPerguntas = perguntas.length;
+    const totalAcertos = contagemAfirmacoes["Acertou"] || 0; // Se não houver acertos, considera como 0
+    const porcentagemAcertos = (totalAcertos / totalPerguntas) * 100;
+
+    caixaPerguntas.textContent = "Resultado do Quiz!";
+    textoResultado.textContent = `Você acertou ${totalAcertos} de ${totalPerguntas} perguntas. Sua taxa de acerto foi ${porcentagemAcertos.toFixed(2)}%.`;
     caixaAlternativas.textContent = "";
 }
 
