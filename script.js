@@ -69,7 +69,7 @@ const perguntas = [
         ]
     },
     {
-        enunciado: "Qual é o nome do feitiço usado para desmascarar um oponente?",
+        enunciado: "Qual é o nome do feitiço usado para desarmar um oponente?",
         alternativas: [
             {
                 texto: "Expelliarmus",
