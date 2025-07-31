@@ -76,7 +76,7 @@ const perguntas = [
                 afirmacao: "Acertou"
             },
             {
-                texto: "Stupefy",
+                texto: "Estupefaça",
                 afirmacao: "Errou"
             },
             {
@@ -101,7 +101,7 @@ const perguntas = [
                 afirmacao: "Errou"
             },
             {
-                texto: "Scabberrs",
+                texto: "Perebas",
                 afirmacao: "Errou"
             },
             {
@@ -114,7 +114,7 @@ const perguntas = [
         enunciado: "Qual é o nome do diretor de Hogwarts durante a maior parte dos filmes?",
         alternativas: [
             {
-                texto: "Albus Dumbledore",
+                texto: "Alvus Dumbledore",
                 afirmacao: "Acertou"
             },
             {
